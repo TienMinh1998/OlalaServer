@@ -22,7 +22,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\APIProject.Common\APIProject.Common.csproj" />
+		<ProjectReference Include="..\olalaserver.Common\olalaserver.Common.csproj" />
 	</ItemGroup>
 
 </Project>

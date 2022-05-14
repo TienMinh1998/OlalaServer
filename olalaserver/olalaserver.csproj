@@ -50,9 +50,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\APIProject.Common\APIProject.Common.csproj" />
-    <ProjectReference Include="..\APIProject.Domain\APIProject.Domain.csproj" />
-    <ProjectReference Include="..\APIProject.Service\APIProject.Service.csproj" />
+    <ProjectReference Include="..\olalaserver.Common\olalaserver.Common.csproj" />
+    <ProjectReference Include="..\olalaserver.Domain\olalaserver.Domain.csproj" />
+    <ProjectReference Include="..\olalaserver.Service\olalaserver.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>
