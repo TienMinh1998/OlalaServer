@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interface\**" />
+    <EmbeddedResource Remove="Interface\**" />
+    <None Remove="Interface\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.3" />
+    <PackageReference Include="PagedList.Core" Version="1.17.4" />
+    <PackageReference Include="PageList" Version="1.2.0" />
+    <PackageReference Include="Sentry.AspNetCore" Version="3.13.0" />
+    <PackageReference Include="SharpRaven" Version="2.4.0" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "GiaAnhFood": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "remoteDebugEnabled": false,
+      "authenticationMode": "None"
+    }
+  }
+}

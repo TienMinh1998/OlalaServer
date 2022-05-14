@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PagedList.Core" Version="1.17.4" />
+    <PackageReference Include="PageList" Version="1.2.0" />
+    <PackageReference Include="Sentry.AspNetCore" Version="3.13.0" />
+    <PackageReference Include="SharpRaven" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APIProject.Common\APIProject.Common.csproj" />
+    <ProjectReference Include="..\APIProject.Domain\APIProject.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VnpayLibrary">
+      <HintPath>C:\Users\thanh\Documents\dumps\VnpayLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

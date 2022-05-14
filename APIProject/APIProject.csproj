@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId> </UserSecretsId>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	  <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GridMail\**" />
+    <Compile Remove="Template\**" />
+    <Content Remove="GridMail\**" />
+    <Content Remove="Template\**" />
+    <EmbeddedResource Remove="GridMail\**" />
+    <EmbeddedResource Remove="Template\**" />
+    <None Remove="GridMail\**" />
+    <None Remove="Template\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Middleware\JWTMiddleware.cs~RF9df8ad7.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.5.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0-preview1.19506.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0-preview1-19509-03" />
+    <PackageReference Include="OfficeOpenXml.Core.ExcelPackage" Version="1.0.0" />
+    <PackageReference Include="PageList" Version="1.2.0" />
+    <PackageReference Include="Quartz" Version="3.3.3" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.3.3" />
+    <PackageReference Include="SendGrid" Version="9.22.0" />
+    <PackageReference Include="Sentry.AspNetCore" Version="3.13.0" />
+    <PackageReference Include="SharpRaven" Version="2.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.2.3" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APIProject.Common\APIProject.Common.csproj" />
+    <ProjectReference Include="..\APIProject.Domain\APIProject.Domain.csproj" />
+    <ProjectReference Include="..\APIProject.Service\APIProject.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\UploadFile\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VnpayLibrary">
+      <HintPath>C:\Users\thanh\Documents\dumps\VnpayLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
