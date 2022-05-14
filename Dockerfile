@@ -3,18 +3,18 @@ WORKDIR /app
 
 # copy csproj and restore as distinct layers
 COPY *.sln .
-COPY APIProject/*.csproj ./APIProject/
-COPY APIProject.Common/*.csproj ./APIProject.Common/
-COPY APIProject.Domain/*.csproj ./APIProject.Domain/
-COPY APIProject.Repository/*.csproj ./APIProject.Repository/
-COPY APIProject.Service/*.csproj ./APIProject.Service/
+COPY olalaserver/*.csproj ./olalaserver/
+COPY olalaserver.Common/*.csproj ./olalaserver.Common/
+COPY olalaserver.Domain/*.csproj ./olalaserver.Domain/
+COPY olalaserver.Repository/*.csproj ./olalaserver.Repository/
+COPY olalaserver.Service/*.csproj ./olalaserver.Service/
 RUN dotnet restore 
 
 # copy everything else and build app
 COPY . ./
-RUN dotnet publish APIProject.sln -c Release -o out
+RUN dotnet publish olalaserver.sln -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 
 EXPOSE 80
 COPY --from=build-env /app/out ./
-ENTRYPOINT ["dotnet", "APIProject.dll"]
+ENTRYPOINT ["dotnet", "olalaserver.dll"]
