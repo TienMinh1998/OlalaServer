@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace APIProject.Domain.Models
 {
+    [Table("Users", Schema = "Userinfomation")]
     public class User : BaseModel
     {
         [StringLength(100)]

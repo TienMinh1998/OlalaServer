@@ -6,6 +6,7 @@ using System.Text;
 
 namespace APIProject.Domain.Models
 {
+    [Table("CustomerType", Schema = "Userinfomation")]
     public class CustomerType
     {
         [Key]

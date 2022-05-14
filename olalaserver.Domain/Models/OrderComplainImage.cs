@@ -6,6 +6,7 @@ using System.Text;
 
 namespace APIProject.Domain.Models
 {
+    [Table("OrderComplainImages", Schema = "Trasaction")]
     public class OrderComplainImage
     {
         [Key]

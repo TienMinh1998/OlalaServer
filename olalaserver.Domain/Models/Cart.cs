@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace APIProject.Domain.Models
 {
+    [Table("Carts", Schema = "Trasaction")]
     public class Cart : BaseModel
     {
         public long Price { get; set; }
